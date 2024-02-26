@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+
+    <ul>
+        @foreach (var item in ViewBag.Numbers)
+        {
+            <li>@item</li>
+        }
+    </ul>
+
+</div>
